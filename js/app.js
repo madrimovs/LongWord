@@ -1,6 +1,10 @@
-const elForm = document.querySelector("#form");
-const elArea = document.querySelector("#textArea");
-const elText = document.querySelector("#long-word");
+function findElement(element, parent = document) {
+  return parent.querySelector(element);
+}
+
+const elForm = findElement("#form");
+const elArea = findElement("#textArea");
+const elText = findElement("#long-word");
 const arr = [];
 
 // LONG WORD FORM
