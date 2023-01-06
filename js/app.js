@@ -1,7 +1,6 @@
-function findElement(element, parent = document) {
-  return parent.querySelector(element);
-}
-
+const findElement = (element, parent = document) => {
+  parent.querySelector(element);
+};
 const elForm = findElement("#form");
 const elArea = findElement("#textArea");
 const elText = findElement("#long-word");
